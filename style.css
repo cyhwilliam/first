@@ -1,0 +1,178 @@
+body{
+	overflow-y: hidden;
+	background-repeat: no-repeat;/*背景图不重复*/
+	background-size: cover;/*背景图不被放大缩小,包括缩小浏览器和ctrl+-*/
+	background-attachment: fixed;/*缩小窗口会自动缩小到背景图比例*/
+	font-family:"Times New Roman",Georgia,sans-Serif,Arial Black;
+	transition:.5s;
+}
+body,html{
+	scrollbar-highlight-color:#000;
+}
+
+
+
+
+
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+border: 0;
+outline : 0;
+}    /*//去除火狐的focus下的虚线边框。*/
+
+
+.bg1 {background-image: url(images/snowMountain.jpg);}
+.bg2 {background-image: url(images/sunMountain.jpg);}
+
+.btn{
+	outline:none;
+	margin-top:10px;
+	margin-left: 10px;
+	width: 70px;
+	height:70px;
+	border: none;
+	border-radius: 10px;
+	opacity:1;
+	color: #ff6666;
+	background-color: #ccc;
+	font-size: 20px;
+	font-family: Arial Black;
+	font-weight: bold;
+	transition:.5s;
+	
+}
+.btn:hover{
+	background-color: #cccccc;
+	margin-top: 5px;
+	margin-left: 5px;
+    width: 80px;
+    height:80px;
+}
+
+
+
+#divtab{
+	overflow: hidden;
+    width: 5px;
+    height:100%;
+    background-color: #fff;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    opacity: 0.2;
+    transition:.5s;
+}
+#divtab:hover{
+	width:90px;
+	opacity: .9;
+}
+
+#upDiv,#downDiv{
+	opacity: .5;
+	border-radius: 90px;
+	background-color: #fff;
+	position:fixed;
+    right:50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition:.3s;
+    border:1px solid #fff;
+}
+#upDiv:hover,#downDiv:hover{
+	margin: 5px;
+	opacity: 1;
+	border:1px solid #fff;
+	color: #ff6666;
+}
+#upDiv{
+	top:150px;
+}
+#downDiv{
+	bottom: 150px;
+}
+
+.board{
+	
+	margin:0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow-y: hidden;
+	padding: 10px;
+	height:200px;
+	width: 800px;
+	background-color: white;
+	opacity: .5;
+	/*border-radius: 10px;*/
+	transition:.5s;
+	position: relative;
+	top:0px;
+	border:1px solid #ffff00;
+    box-shadow: 0px 0px 20px #ffff00;
+}
+.board:hover{
+	opacity:1;
+	border:1px solid #ffff00;
+	box-shadow: 0px 0px 20px #ffff00;
+	/*height:500px;*/
+}
+#p1{
+	margin-top:10px;
+	display: block;
+   font-family:serif;/*font-family才是改变字体*/
+   font-weight: bold;
+   font-size: 60px;
+   color: #666666;
+   text-align: center;/*必须设置在块级元素里面,居中*/
+   vertical-align: center;
+}
+#p2{
+	display: block;
+   font-family:Arial Black;
+   font-weight: bold;
+   font-size: 15px;
+   color: #000;
+   margin: 0 auto;
+   width: 600px;
+   height:100px;
+   border:1px dashed #666666;
+   resize:none;
+   transition:.5s;
+}
+#p3{
+	overflow: hidden;
+	display: block;
+   font-family:Arial Black;
+   font-weight: bold;
+   font-size: 30px;
+   color: #000;
+   margin: 0 auto;
+   width: 600px;
+   height:35px;
+   border:1px dashed #666666;
+   resize:none;
+}
+#readmore,#deletethis{
+	width:80px;
+	height:30px;
+	/*border-radius: 10px;*/
+	font-weight: bold;
+	outline: none;
+	border:none;
+	background-color: #fff;
+	transition:.5s;
+}
+#readmore{
+	position: absolute;
+	bottom:0px;
+	right: 0px;
+}
+#readmore:hover,#deletethis:hover{
+	background-color: #666666;
+	color: #fff;
+	
+}
